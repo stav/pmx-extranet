@@ -1,0 +1,98 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AI Education & Training Services',
+};
+
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="AI Education"
+    title="Empower Your Team with AI Knowledge"
+    subtitle="Comprehensive training programs designed to upskill your team in AI technologies, from fundamentals to advanced implementation."
+    actions={[{ variant: 'primary', text: 'Schedule Training', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AI Education',
+    }}
+  />
+
+  <Features2
+    title="Our Training Programs"
+    subtitle="Comprehensive AI education designed for all skill levels"
+    items={[
+      {
+        title: 'AI Fundamentals',
+        description: 'Introduction to AI concepts, machine learning basics, and practical applications in business.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Advanced AI Implementation',
+        description: 'Deep dive into AI model development, deployment strategies, and optimization techniques.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'AI for Business Leaders',
+        description: 'Strategic overview of AI implementation, ROI analysis, and organizational transformation.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'Custom Training Programs',
+        description: 'Tailored training solutions designed to meet your organization\'s specific needs and goals.',
+        icon: 'tabler:tools',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Hands-on Learning',
+        description: 'Practical exercises and real-world projects to reinforce theoretical knowledge.',
+        icon: 'tabler:hand-click',
+      },
+      {
+        title: 'Expert Instructors',
+        description: 'Learn from industry professionals with extensive experience in AI implementation.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Flexible Formats',
+        description: 'Choose from in-person workshops, virtual sessions, or self-paced online courses.',
+        icon: 'tabler:device-laptop',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Access to resources and support even after completing the training program.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'AI Training',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Training Programs</h3>
+    </Fragment>
+  </Content>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your AI Journey',
+        href: '/contact',
+      },
+    ]}
+    title="Ready to Transform Your Team's AI Capabilities?"
+    subtitle="Contact us today to discuss your training needs and develop a customized learning plan."
+  />
+</Layout> 

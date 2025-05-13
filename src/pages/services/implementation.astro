@@ -1,0 +1,98 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AI Implementation Services',
+};
+
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="AI Implementation"
+    title="Turn AI Strategy into Reality"
+    subtitle="End-to-end AI implementation services to help you deploy and optimize AI solutions that deliver real business value."
+    actions={[{ variant: 'primary', text: 'Start Implementation', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AI Implementation',
+    }}
+  />
+
+  <Features2
+    title="Our Implementation Services"
+    subtitle="Comprehensive AI deployment and optimization solutions"
+    items={[
+      {
+        title: 'Solution Architecture',
+        description: 'Design robust and scalable AI solutions that integrate seamlessly with your existing systems.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Model Development',
+        description: 'Build and train custom AI models tailored to your specific business requirements.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'System Integration',
+        description: 'Seamlessly integrate AI solutions with your existing infrastructure and workflows.',
+        icon: 'tabler:plug',
+      },
+      {
+        title: 'Performance Optimization',
+        description: 'Fine-tune and optimize AI solutions for maximum efficiency and accuracy.',
+        icon: 'tabler:chart-bar',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Proven Methodology',
+        description: 'Structured implementation approach ensuring successful deployment and adoption.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Expert Team',
+        description: 'Skilled professionals with extensive experience in AI implementation.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Quality Assurance',
+        description: 'Rigorous testing and validation to ensure reliable and accurate results.',
+        icon: 'tabler:check',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Continuous monitoring, maintenance, and optimization of your AI solutions.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'AI Implementation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Implementation Services</h3>
+    </Fragment>
+  </Content>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Implementation',
+        href: '/contact',
+      },
+    ]}
+    title="Ready to Deploy Your AI Solution?"
+    subtitle="Contact us today to discuss your implementation needs and start your AI journey."
+  />
+</Layout> 

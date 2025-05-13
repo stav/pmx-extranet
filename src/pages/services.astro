@@ -7,7 +7,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'AI Services',
 };
 ---
 
@@ -15,74 +15,75 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    tagline="Our Services"
+    title="Transform Your Business with AI Solutions"
+    subtitle="From education and consulting to implementation and support, we provide comprehensive AI services to help your organization thrive in the digital age."
+    actions={[{ variant: 'primary', text: 'Schedule Consultation', href: '/contact' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      alt: 'AI Innovation',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
+    title="Our AI Service Portfolio"
+    subtitle="Comprehensive solutions designed to meet your organization's unique needs"
     columns={3}
     items={[
       {
-        title: 'Educational',
+        title: 'AI Education & Training',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
+          'Comprehensive training programs covering AI fundamentals, implementation strategies, and advanced techniques. Designed for teams at all levels, from beginners to advanced practitioners.',
         icon: 'tabler:school',
       },
       {
-        title: 'Interior Design',
+        title: 'AI Strategy Consulting',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          'Expert guidance on developing and implementing AI strategies aligned with your business goals. We help you identify opportunities, assess risks, and create a roadmap for success.',
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
+        title: 'AI Integration',
+        description: `Seamless integration of AI solutions into your existing systems and workflows. We ensure smooth adoption and optimal performance while minimizing disruption to your operations.`,
+        icon: 'tabler:code',
       },
       {
-        title: 'E-commerce',
+        title: 'Custom AI Development',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          'Tailored AI solutions designed to address your specific business challenges. Our team develops custom models and applications that deliver measurable results.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Blog',
+        title: 'AI Implementation',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          'End-to-end implementation of AI solutions, from initial setup to full deployment. We handle the technical details while you focus on your business.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Business',
+        title: 'AI Support & Maintenance',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          'Ongoing support and maintenance to ensure your AI solutions remain effective and up-to-date. Our team is always available to help you resolve issues and optimize performance.',
+        icon: 'tabler:headset',
       },
       {
-        title: 'Branding',
+        title: 'AI Security & Compliance',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
+          'Comprehensive security measures and compliance frameworks to protect your AI solutions. We ensure your systems meet industry standards and regulatory requirements.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
+        title: 'AI Performance Monitoring',
         description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'Continuous monitoring and optimization of your AI solutions. We track performance metrics and make adjustments to ensure maximum value.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'AI Innovation Lab',
+        description:
+          'Access to cutting-edge AI technologies and research. Stay ahead of the curve with our innovation lab, where we explore emerging trends and develop new solutions.',
+        icon: 'tabler:flask',
       },
     ]}
   />
@@ -93,37 +94,37 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Expert Team',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'Our team consists of certified AI professionals with deep expertise in machine learning, deep learning, and AI implementation.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Customization Tools',
+        title: 'Proven Methodology',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'We follow a structured approach to AI implementation that ensures successful outcomes and measurable results.',
+        icon: 'tabler:chart-dots',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Industry Experience',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          'Years of experience implementing AI solutions across various industries, from startups to enterprises.',
+        icon: 'tabler:building',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'Continuous Support',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'Ongoing support and maintenance to ensure your AI solutions remain effective and up-to-date.',
+        icon: 'tabler:headset',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      alt: 'AI Expertise',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Us</h3>
     </Fragment>
   </Content>
 
@@ -133,77 +134,76 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Increased Efficiency',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
+          'Automate routine tasks and streamline processes to improve productivity and reduce operational costs.',
+        icon: 'tabler:chart-line',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Better Decision Making',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'Leverage AI-powered insights to make data-driven decisions and stay ahead of the competition.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Enhanced Innovation',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
+          'Access cutting-edge AI technologies and stay at the forefront of innovation in your industry.',
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Instant Download',
+        title: 'Competitive Advantage',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          'Gain a competitive edge by implementing AI solutions that transform your business operations.',
+        icon: 'tabler:target',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      alt: 'AI Benefits',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits of AI Implementation</h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Client Success Stories"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `PMX Services transformed our business with their AI solutions. Their expertise and guidance helped us implement AI effectively, resulting in significant efficiency gains and cost savings.`,
+        name: 'Dr. Sarah Chen',
+        job: 'CTO, TechInnovate',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          alt: 'Dr. Sarah Chen',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `The AI training program provided by PMX Services was exceptional. Our team gained valuable skills and knowledge that have helped us leverage AI effectively in our operations.`,
+        name: 'Michael Rodriguez',
+        job: 'Director of Innovation, Global Solutions',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          alt: 'Michael Rodriguez',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `Working with PMX Services has been a game-changer for our organization. Their AI integration services helped us modernize our systems and improve our decision-making processes.`,
+        name: 'Lisa Thompson',
+        job: 'CEO, FutureTech',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Lisa Thompson',
         },
       },
     ]}
     callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
+      text: 'View More Case Studies',
+      href: '/case-studies',
       icon: 'tabler:chevron-right',
     }}
   />
@@ -214,11 +214,11 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Schedule a Consultation',
+        href: '/contact',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="Ready to Transform Your Business with AI?"
+    subtitle="Contact us today to discuss how our AI solutions can help you achieve your business goals."
   />
 </Layout>

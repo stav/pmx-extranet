@@ -5,19 +5,23 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact PMX Services',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText 
+    tagline="Contact Us" 
+    title="Let's Discuss Your AI Journey" 
+    subtitle="Ready to transform your business with AI? Our team of experts is here to help you navigate the path to AI success."
+  />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Schedule a Consultation"
+    subtitle="Tell us about your AI needs and challenges. Our team will get back to you within 24 hours to discuss how we can help transform your business."
     inputs={[
       {
         type: 'text',
@@ -29,49 +33,63 @@ const metadata = {
         name: 'email',
         label: 'Email',
       },
+      {
+        type: 'text',
+        name: 'company',
+        label: 'Company',
+      },
+      {
+        type: 'text',
+        name: 'service',
+        label: 'Service Interest',
+        placeholder: 'AI Education & Training, AI Strategy Consulting, AI Integration, etc.',
+      },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Tell us about your AI needs and challenges',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'By submitting this form, you agree to our privacy policy and consent to being contacted about our AI services.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our AI experts typically respond within 24 business hours."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="How Can We Help You?"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'AI Strategy Consultation',
+        description: `Schedule a consultation to discuss your AI strategy, implementation roadmap, and how our solutions can help achieve your business goals.`,
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Contact sales',
+        title: 'Technical Support',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+          'Get assistance with your existing AI solutions, implementation challenges, or technical questions about our services.',
         icon: 'tabler:headset',
       },
       {
+        title: 'Training Inquiries',
+        description:
+          'Learn more about our AI training programs and how we can help upskill your team in artificial intelligence technologies.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Phone',
+        description: '+1 (555) 123-4567',
+        icon: 'tabler:phone',
+      },
+      {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'contact@pmxservices.com',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Headquarters',
+        description: '123 AI Innovation Drive, Suite 500, San Francisco, CA 94105',
         icon: 'tabler:map-pin',
       },
     ]}

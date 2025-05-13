@@ -1,0 +1,99 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+
+const metadata = {
+  title: 'AI Consulting Services',
+};
+
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="AI Consulting"
+    title="Strategic AI Guidance for Your Business"
+    subtitle="Expert consulting services to help you develop and implement effective AI strategies that drive business growth and innovation."
+    actions={[{ variant: 'primary', text: 'Schedule Consultation', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AI Consulting',
+    }}
+  />
+
+  <Features2
+    title="Our Consulting Services"
+    subtitle="Comprehensive AI strategy and implementation guidance"
+    items={[
+      {
+        title: 'AI Strategy Development',
+        description: 'Develop a clear roadmap for AI implementation aligned with your business goals and objectives.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'Technology Assessment',
+        description: 'Evaluate your current technology stack and identify opportunities for AI integration.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'ROI Analysis',
+        description: 'Quantify the potential impact and return on investment of AI initiatives.',
+        icon: 'tabler:calculator',
+      },
+      {
+        title: 'Risk Assessment',
+        description: 'Identify and mitigate potential risks associated with AI implementation.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Industry Expertise',
+        description: 'Deep understanding of AI applications across various industries and business functions.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Proven Methodology',
+        description: 'Structured approach to AI strategy development and implementation.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Custom Solutions',
+        description: 'Tailored recommendations based on your unique business needs and challenges.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Continuous guidance and support throughout your AI journey.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'AI Strategy',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Consulting Services</h3>
+    </Fragment>
+  </Content>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your AI Journey',
+        href: '/contact',
+      },
+    ]}
+    title="Ready to Transform Your Business with AI?"
+    subtitle="Contact us today to discuss how our consulting services can help you achieve your business goals."
+  />
+</Layout> 

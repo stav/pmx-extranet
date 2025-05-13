@@ -7,7 +7,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About PMX Services',
 };
 ---
 
@@ -15,61 +15,61 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="About Us"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      alt: 'PMX Services Team',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white"> Beautiful Website Templates</span>
+      Leading the Future of <br />
+      <span class="text-accent dark:text-white">AI Innovation</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      PMX Services is a premier provider of AI education, consulting, and integration services. With over a decade of experience, 
+      we help organizations harness the power of artificial intelligence to drive innovation, efficiency, and growth. Our team of 
+      experts combines deep technical knowledge with practical business acumen to deliver transformative AI solutions.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Our Impact"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'AI Projects', amount: '150+' },
+      { title: 'Expert Team', amount: '25+' },
+      { title: 'Industries Served', amount: '12+' },
+      { title: 'Years Experience', amount: '10+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our Core Services"
+    subtitle="We offer comprehensive AI solutions designed to meet your organization's unique needs and challenges."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'AI Education',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Comprehensive training programs covering AI fundamentals, implementation strategies, and advanced techniques for teams at all levels.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Interior Design',
+        title: 'AI Consulting',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Expert guidance on AI strategy, implementation, and optimization to help you make informed decisions and maximize ROI.',
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Photography',
+        title: 'AI Integration',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Seamless integration of AI solutions into your existing systems and workflows, ensuring smooth adoption and optimal performance.',
+        icon: 'tabler:code',
       },
     ]}
   />
@@ -81,68 +81,50 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Custom AI Solutions',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          'Tailored AI solutions designed to address your specific business challenges and drive measurable results.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Blog',
+        title: 'AI Strategy',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'Comprehensive AI strategy development aligned with your business goals and market opportunities.',
+        icon: 'tabler:chart-dots',
       },
       {
-        title: 'Business',
+        title: 'Ongoing Support',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          'Continuous support and maintenance to ensure your AI solutions remain effective and up-to-date.',
+        icon: 'tabler:headset',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      alt: 'AI Innovation',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Our Values"
+    subtitle="Our core values guide everything we do, from how we work with clients to how we develop and deliver AI solutions."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Client Success First',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'We measure our success by the success of our clients. Every solution we develop is designed to deliver measurable business value and drive growth.',
       },
       {
-        title: 'Constant Improvement',
+        title: 'Innovation & Excellence',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'We stay at the forefront of AI technology, continuously learning and innovating to deliver cutting-edge solutions that give our clients a competitive edge.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Ethical AI',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'We are committed to developing and implementing AI solutions that are ethical, transparent, and aligned with industry best practices and regulations.',
       },
     ]}
   />
@@ -150,30 +132,30 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Our Achievements"
+    subtitle="Our track record of success speaks to our expertise and commitment to delivering exceptional results."
     isReversed={true}
     callToAction={{
-      text: 'See more',
-      href: '/',
+      text: 'View Case Studies',
+      href: '/case-studies',
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'Industry Recognition',
+        description: 'Recognized as a leading provider of AI solutions, with numerous industry awards and certifications.',
+        icon: 'tabler:award',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Client Satisfaction',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+          'Consistently high client satisfaction ratings, with many long-term partnerships and successful project deliveries.',
         icon: 'tabler:message-star',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Global Impact',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+          'Successfully implemented AI solutions across multiple industries and regions, helping organizations worldwide achieve their digital transformation goals.',
+        icon: 'tabler:globe',
       },
     ]}
   />
@@ -181,25 +163,25 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
+    title="Our Global Presence"
+    tagline="Locations"
     columns={4}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'North America',
+        description: 'Headquarters and Innovation Center',
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'Europe',
+        description: 'Regional Office and Training Center',
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+        title: 'Asia Pacific',
+        description: 'Regional Office and Research Lab',
       },
       {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'Middle East',
+        description: 'Regional Office and Support Center',
       },
     ]}
   />
@@ -207,20 +189,20 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Get in Touch"
+    tagline="Contact Us"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Schedule a Consultation',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+          'Ready to transform your business with AI? Schedule a consultation with our experts to discuss your needs and explore how we can help.',
+        icon: 'tabler:calendar',
       },
       {
-        title: 'Call us',
+        title: 'Technical Support',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+          'Need assistance with your AI solutions? Our dedicated support team is available to help you resolve any issues and ensure optimal performance.',
         icon: 'tabler:headset',
       },
     ]}

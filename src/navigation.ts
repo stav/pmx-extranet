@@ -6,20 +6,16 @@ export const headerData = {
       text: 'Services',
       links: [
         {
-          text: 'IT Consulting',
-          href: getPermalink('/services/it-consulting'),
+          text: 'Education',
+          href: getPermalink('/services/education'),
         },
         {
-          text: 'Digital Solutions',
-          href: getPermalink('/services/digital-solutions'),
+          text: 'Consulting',
+          href: getPermalink('/services/consulting'),
         },
         {
-          text: 'Cloud Services',
-          href: getPermalink('/services/cloud-services'),
-        },
-        {
-          text: 'Managed IT',
-          href: getPermalink('/services/managed-it'),
+          text: 'Implementation',
+          href: getPermalink('/services/implementation'),
         },
       ],
     },
@@ -33,6 +29,10 @@ export const headerData = {
         {
           text: 'Services',
           href: getPermalink('/services'),
+        },
+        {
+          text: 'Pricing',
+          href: getPermalink('/pricing'),
         },
         {
           text: 'Case Studies',
@@ -54,20 +54,7 @@ export const headerData = {
     },
     {
       text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('technology', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('it-services', 'tag'),
-        },
-      ],
+      href: getBlogPermalink(),
     },
   ],
   actions: [{ text: 'Contact Us', href: getPermalink('/contact') }],
@@ -78,11 +65,9 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'IT Consulting', href: getPermalink('/services/it-consulting') },
-        { text: 'Digital Solutions', href: getPermalink('/services/digital-solutions') },
-        { text: 'Cloud Services', href: getPermalink('/services/cloud-services') },
-        { text: 'Managed IT', href: getPermalink('/services/managed-it') },
-        { text: 'Case Studies', href: getPermalink('/case-studies') },
+        { text: 'Education', href: getPermalink('/services/education') },
+        { text: 'Consulting', href: getPermalink('/services/consulting') },
+        { text: 'Implementation', href: getPermalink('/services/implementation') },
       ],
     },
     {
@@ -90,8 +75,10 @@ export const footerData = {
       links: [
         { text: 'About Us', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Pricing', href: getPermalink('/pricing') },
         { text: 'Careers', href: getPermalink('/careers') },
         { text: 'Contact', href: getPermalink('/contact') },
+        { text: 'Case Studies', href: getPermalink('/case-studies') },
       ],
     },
     {

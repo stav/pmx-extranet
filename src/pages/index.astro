@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'PMX Services — AI Education, Consulting & Integration',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,78 +25,74 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Contact Us',
+        href: '/contact',
+        icon: 'tabler:mail',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Our Services', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'PMX Services Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      Transforming Businesses with <span class="text-accent dark:text-white">AI Solutions</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">PMX Services</span> specializes in AI education, consulting, and integration services.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">PMX Services: AI Experts.</span>
+      Empowering organizations with cutting-edge AI solutions, expert guidance, and comprehensive training programs to drive innovation and growth.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Our Mission:" description="Empowering Organizations Through AI Innovation" />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Services"
+    title="Comprehensive AI Solutions"
+    subtitle="We provide end-to-end AI services to help your organization leverage the power of artificial intelligence effectively and responsibly."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'AI Education & Training',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Comprehensive training programs designed to upskill your team in AI technologies, from fundamentals to advanced implementation.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'AI Consulting',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Expert guidance on AI strategy, implementation, and optimization to help you make informed decisions and maximize ROI.',
         icon: 'tabler:bulb',
+      },
+      {
+        title: 'AI Integration',
+        description:
+          'Seamless integration of AI solutions into your existing systems and workflows, ensuring smooth adoption and optimal performance.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Custom AI Solutions',
+        description:
+          'Tailored AI solutions designed to address your specific business challenges and drive measurable results.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'AI Strategy Development',
+        description:
+          'Comprehensive AI strategy development aligned with your business goals and market opportunities.',
+        icon: 'tabler:chart-dots',
+      },
+      {
+        title: 'Ongoing Support',
+        description:
+          'Continuous support and maintenance to ensure your AI solutions remain effective and up-to-date with the latest advancements.',
+        icon: 'tabler:headset',
       },
     ]}
   />
@@ -105,33 +101,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Why Choose Us"
+    title="Expertise Meets Innovation"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Industry Experience',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Years of experience in implementing AI solutions across various industries, from startups to enterprises.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Expert Team',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Our team consists of certified AI professionals with deep expertise in machine learning, deep learning, and AI implementation.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Proven Methodology',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'A structured approach to AI implementation that ensures successful outcomes and measurable results.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      alt: 'AI Innovation',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Your AI Journey Starts Here</h3>
+      Partner with us to transform your business with AI
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,69 +141,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Customized Training Programs',
+        description: `Tailored AI education programs designed to meet your team's specific needs and skill levels.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Strategic Consulting',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Expert guidance on AI implementation, helping you make informed decisions and avoid common pitfalls.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Seamless Integration',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Smooth integration of AI solutions into your existing systems, ensuring minimal disruption to your operations.',
       },
       {
-        title: 'Integration of media',
+        title: 'Continuous Support',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Ongoing support and maintenance to ensure your AI solutions remain effective and up-to-date.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      alt: 'AI Solutions',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Comprehensive AI Solutions for Your Business</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,92 +175,89 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Your Path to AI Success"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Assessment</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "We begin with a thorough assessment of your organization's needs, goals, and current capabilities to develop a tailored AI strategy.",
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Strategy Development</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Together, we develop a comprehensive AI strategy aligned with your business objectives and market opportunities.",
+        icon: 'tabler:chart-dots',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Implementation</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'We implement the chosen AI solutions, providing training and support throughout the process to ensure successful adoption.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Step 4: <span class="font-medium">Optimization</span>',
+        description:
+          'Continuous monitoring and optimization of your AI solutions to ensure they deliver maximum value and stay current with advancements.',
+        icon: 'tabler:chart-bar',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'AI Implementation Steps',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Our AI Solutions"
+    subtitle="Comprehensive AI services designed to transform your business"
+    tagline="Solutions"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'AI Strategy',
+        description: "Develop a clear roadmap for AI implementation aligned with your business goals and objectives.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        title: 'AI Training',
+        description: "Comprehensive training programs to upskill your team in AI technologies and best practices.",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'AI Integration',
+        description: 'Seamless integration of AI solutions into your existing systems and workflows.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        title: 'Custom Development',
+        description: "Tailored AI solutions designed to address your specific business challenges and requirements.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        title: 'AI Consulting',
+        description: 'Expert guidance on AI implementation, optimization, and best practices.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: 'Support & Maintenance',
+        description: 'Ongoing support and maintenance to ensure your AI solutions remain effective and up-to-date.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Performance Monitoring',
+        description: 'Continuous monitoring and optimization of AI solutions to ensure maximum value.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: 'Security & Compliance',
+        description: 'Ensure your AI solutions meet industry standards and regulatory requirements.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'Innovation Lab',
+        description: "Stay ahead of the curve with access to cutting-edge AI technologies and research.",
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -315,50 +270,49 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Latest Insights from Our Blog"
+    information={`Stay updated with the latest trends, insights, and best practices in AI technology.
+                  Our blog features expert analysis, case studies, and practical guides to help you
+                  navigate the world of artificial intelligence.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Get answers to common questions about our AI services and solutions"
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What AI services do you offer?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "We offer comprehensive AI services including education and training, consulting, integration, custom development, and ongoing support. Our team of experts helps organizations implement and optimize AI solutions to drive business growth and innovation.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'How can AI benefit my business?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "AI can transform your business by automating processes, improving decision-making, enhancing customer experiences, and driving innovation. Our team will help you identify specific opportunities where AI can add value to your organization.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What is your approach to AI implementation?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "We follow a structured approach that begins with assessment, followed by strategy development, implementation, and ongoing optimization. This ensures successful adoption and maximum return on your AI investment.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "Do you provide AI training for teams?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Yes, we offer customized AI training programs designed to upskill your team. Our training covers everything from AI fundamentals to advanced implementation, ensuring your team has the knowledge and skills needed to succeed.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'How do you ensure AI solution security?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "Security is a top priority. We implement robust security measures and ensure compliance with industry standards and regulations. Our solutions are designed with data protection and privacy in mind.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'What industries do you serve?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "We serve organizations across various industries, from startups to enterprises. Our AI solutions are adaptable to different business needs and can be customized for specific industry requirements.",
       },
     ]}
   />
@@ -367,10 +321,10 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Projects Completed', amount: '150+' },
+      { title: 'Clients Served', amount: '50+' },
+      { title: 'Team Members', amount: '25+' },
+      { title: 'Years Experience', amount: '10+' },
     ]}
   />
 
@@ -380,20 +334,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Contact Us',
+        href: '/contact',
+        icon: 'tabler:mail',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready to Transform Your Business with AI?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Let's discuss how our AI solutions can help you achieve your business goals. <br class="hidden md:inline" />
+      Contact us today to schedule a consultation.
     </Fragment>
   </CallToAction>
 </Layout>

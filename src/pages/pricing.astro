@@ -8,7 +8,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'AI Services Pricing',
 };
 ---
 
@@ -17,94 +17,103 @@ const metadata = {
 
   <HeroText
     tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Flexible AI Solutions for Every Business"
+    subtitle="Choose the perfect AI service package that aligns with your organization's needs and goals."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Our AI Service Packages"
+    subtitle="Customized solutions for your AI journey"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
+        title: 'Starter',
+        subtitle: 'Perfect for small teams beginning their AI journey',
+        price: 2999,
         period: 'per month',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Basic AI Strategy Consultation',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'AI Readiness Assessment',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Team Training (up to 5 people)',
           },
           {
-            description: 'In hac habitasse',
+            description: 'Basic AI Implementation Support',
+          },
+          {
+            description: 'Email Support',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Get Started',
+          href: '/contact',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
+        title: 'Professional',
+        subtitle: 'Ideal for growing organizations',
+        price: 6999,
         period: 'Per Month',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Comprehensive AI Strategy Development',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Custom AI Solution Design',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Team Training (up to 15 people)',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: 'AI Integration Support',
           },
           {
-            description: 'Donec fringilla sem',
+            description: 'Performance Monitoring',
+          },
+          {
+            description: 'Priority Support',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Get Started',
+          href: '/contact',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Enterprise',
+        subtitle: 'For large organizations with complex needs',
+        price: 'Custom',
+        period: 'Contact Us',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Full-Scale AI Transformation',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Custom AI Development',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Unlimited Team Training',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: '24/7 Dedicated Support',
+          },
+          {
+            description: 'Custom Integration Solutions',
+          },
+          {
+            description: 'Strategic AI Roadmap',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Contact Sales',
+          href: '/contact',
         },
       },
     ]}
@@ -113,39 +122,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="What's Included in Every Package"
+    subtitle="Comprehensive AI solutions with flexible options"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'Expert AI Team',
+        description: 'Access to our team of certified AI professionals with deep expertise in machine learning and implementation.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        title: 'Customized Solutions',
+        description: 'Tailored AI solutions designed to meet your specific business needs and challenges.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
-      },
-      {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
-      },
-      {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
-      },
-      {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Ongoing Support',
+        description: 'Continuous support and maintenance to ensure your AI solutions remain effective and up-to-date.',
         icon: 'tabler:headset',
+      },
+      {
+        title: 'Security & Compliance',
+        description: 'Comprehensive security measures and compliance frameworks to protect your AI solutions.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Performance Monitoring',
+        description: 'Regular monitoring and optimization of your AI solutions to ensure maximum value.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Training & Knowledge Transfer',
+        description: 'Comprehensive training programs to ensure your team can effectively use and maintain AI solutions.',
+        icon: 'tabler:school',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
@@ -154,42 +163,38 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="Your Path to AI Success"
+    tagline="Implementation Process"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
-        icon: 'tabler:number-1',
+        title: 'Initial Consultation',
+        icon: 'tabler:message',
       },
       {
-        title: 'Select a plan',
-        icon: 'tabler:number-2',
+        title: 'Needs Assessment',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Sign Up / Log In',
-        icon: 'tabler:number-3',
+        title: 'Solution Design',
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Review order',
-        icon: 'tabler:number-4',
+        title: 'Implementation',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
+        title: 'Training & Support',
+        icon: 'tabler:school',
       },
       {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
+        title: 'Monitoring & Optimization',
+        icon: 'tabler:chart-bar',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'AI Implementation Process',
     }}
   />
 
@@ -197,33 +202,33 @@ const metadata = {
 
   <FAQs
     title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    subtitle="Have questions about our AI service packages? We're here to help you choose the right solution for your needs."
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'Do you offer custom pricing for specific needs?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'Yes, we understand that every organization has unique requirements. Our Enterprise package is fully customizable, and we can also create custom solutions for specific needs.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: 'What kind of support is included?',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+          'Support levels vary by package. Starter includes email support, Professional includes priority support, and Enterprise includes 24/7 dedicated support with a dedicated account manager.',
       },
       {
-        title: 'Can I switch between plans?',
+        title: 'Can I upgrade or downgrade my package?',
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          'Yes, you can change your package at any time. We will work with you to ensure a smooth transition and adjust your services accordingly.',
       },
       {
         title: 'What payment methods do you accept?',
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          'We accept major credit cards, bank transfers, and can accommodate enterprise payment terms for larger organizations.',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: 'Is there a minimum contract length?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          'Our packages are available on a month-to-month basis, but we offer discounted rates for annual commitments. Enterprise solutions may have custom terms based on project scope.',
       },
     ]}
   />
@@ -231,13 +236,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Ready to Transform Your Business with AI?"
+    subtitle="Schedule a consultation with our AI experts to discuss your needs and find the perfect solution for your organization."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Schedule Consultation',
+        href: '/contact',
       },
     ]}
   />
