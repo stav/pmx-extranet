@@ -23,7 +23,7 @@ For the purposes of this Cookie Policy:
 - **Country** refers to: California, United States
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Service** refers to the Website.
-- **Website** refers to PMX Services, accessible from [https://pmxservices.com](https://pmxservices.com)
+- **Website** refers to PMX Services, accessible from [https://pmx.services](https://pmx.services)
 - **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ## Types of Cookies We Use
@@ -87,6 +87,5 @@ You are advised to review this Cookie Policy periodically for any changes. Chang
 
 If you have any questions about this Cookie Policy, You can contact us:
 
-- By email: privacy@pmxservices.com
-- By phone: +1 (555) 123-4567
-- By mail: 123 AI Innovation Drive, Suite 500, San Francisco, CA 94105 
+- By email: pmx@primesite.dev
+- By phone: +1 (216) 666-0300

@@ -76,7 +76,6 @@ export const footerData = {
         { text: 'About Us', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Pricing', href: getPermalink('/pricing') },
-        { text: 'Careers', href: getPermalink('/careers') },
         { text: 'Contact', href: getPermalink('/contact') },
         { text: 'Case Studies', href: getPermalink('/case-studies') },
       ],

@@ -1,6 +1,6 @@
 site:
   name: PMX Services
-  site: 'https://pmxservices.com'
+  site: 'https://pmx.services'
   base: '/'
   trailingSlash: false
 
